@@ -1,0 +1,60 @@
+/*type selectors*/
+
+html {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+div {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #ddd;
+  padding: 30px;
+}
+
+/*classes*/
+
+.redBG {
+  background-color: red;
+  color: #fff;
+  padding: 15px;
+}
+#resourceLink {
+  text-decoration: none;
+}
+
+/*attribute selectors*/
+
+/*a[href="https://developer.mozilla.org/en-US/docs/Learn/CSS/
+Building_blocks/Selectors/Combinators#General_sibling"] {
+  color: #bada55;
+}*/
+/*pseudo class / element*/
+
+#resourceLink:hover {
+  color: #444;
+}
+
+ul li:nth-child(even) {
+  color: aqua;
+}
+
+/*combinators*/
+
+main > p > em {
+  color: goldenrod;
+}
+
+/*general sibling*/
+h3 ~ p {
+  color: #ee00ee;
+}
+h3 + p {
+  color: darksalmon;
+}
+main section:first-of-type > h3 + p {
+  color: springgreen;
+}
